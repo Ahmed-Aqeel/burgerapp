@@ -15,15 +15,7 @@ function App() {
   const [data,setData]=useState([])
 
 
-  const getData=()=>{
-    axios.get('https://jsonplaceholder.typicode.com/posts')
-    .then((res)=>{setData(res)
-    console.log(res)
-    })
-    .catch(console.log('Error fetching data'))
 
-    
-  }
 
 const findItem=(item)=>{
   let i=ingred.length-1
@@ -112,9 +104,9 @@ function removeMeat(){
      </div>
 
 
-    <button onClick={getData}>Click here to get data</button>
+ 
     
-      <getData/>
+     
       {data}   
     </div>
   );
